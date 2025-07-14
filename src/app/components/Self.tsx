@@ -10,7 +10,7 @@ const Banner: React.FC = () => {
                     alt="Profile Photo"
                     width={500}
                     height={500}
-                    className="border-gray-400 border-8 rounded-full max-h-[35vh] md:max-h-[50vw] max-w-[35vh] md:max-w-[50vw] mx-4 my-4"
+                    className="border-secondary border-8 rounded-full max-h-[35vh] md:max-h-[50vw] max-w-[35vh] md:max-w-[50vw] mx-4 my-4 transition-all duration-300 hover:scale-[1.05]"
                 />
                 <div className="flex flex-col items-center md:items-start justify-center w-full pl-2">
                     <h1 className="text-4xl md:text-6xl font-bold text-center md:text-start">Yu You (Ryan) Chen</h1>
