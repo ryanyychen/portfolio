@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { prefix } from '@/app/prefix';
 import { useIsSmallScreen } from '@/app/utils';
-import { clear } from 'console';
 
 interface CarouselProps {
     projects?: Array<{image: string; title: string; date: string; description: string; link: string; highlighted: boolean}>;
