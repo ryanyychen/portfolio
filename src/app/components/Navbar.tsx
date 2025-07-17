@@ -11,7 +11,7 @@ const navLinks = [
     { href: "/resume", label: "Resume", id: "resume" },
 ];
 
-const Topbar: React.FC = () => {
+const Navbar: React.FC = () => {
     const pathname = usePathname();
 
     return (
@@ -27,4 +27,4 @@ const Topbar: React.FC = () => {
     )
 };
 
-export default Topbar;
+export default Navbar;
