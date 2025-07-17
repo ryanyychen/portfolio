@@ -1,12 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import { prefix } from '@/app/prefix'
 
 const Banner: React.FC = () => {
     return (
         <div className="justify-items-center w-full">
             <div className="flex flex-col md:flex-row items-center justify-items-center">
                 <Image
-                    src="https://ryanyychen.github.io/personal-website/profile-image.jpg"
+                    src={`${prefix}/profile-image.jpg`}
                     alt="Profile Photo"
                     width={500}
                     height={500}
