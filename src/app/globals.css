@@ -13,11 +13,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: #e0e0e0;
-  --color-secondary: #212121;
+  --color-primary: #f4f4f4;
+  --color-secondary: #515151;
+  --color-accent: #0044ff;
 }
 
-button {
+.homebutton {
   background-color: var(--color-secondary);
   color: var(--color-primary);
   border-radius: 10px;
@@ -25,12 +26,13 @@ button {
   padding: 0.5rem 1rem;
 }
 
-button:hover {
+.homebutton:hover {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.15s ease, color 0.15s ease;
   cursor: pointer;
+  scale: 1.05;
 }
 
 .animated-underline::after {

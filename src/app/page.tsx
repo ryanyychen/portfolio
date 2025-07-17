@@ -1,4 +1,4 @@
-import Self from "./components/Self";
+import Self from "@/app/components/Self";
 
 export default function Home() {
   return (

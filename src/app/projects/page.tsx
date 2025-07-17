@@ -1,9 +1,13 @@
+import Carousel from "@/app/components/Carousel";
+import Projects from "@/app/components/Projects";
+import projectsData from "./projects.json";
+
 export default function Home() {
-  return (
-    <div className="dev-border h-[90vh] justify-items-center font-[family-name:var(--font-geist-sans)] bg-primary">
-      <main className="flex flex-col items-center h-full">
-        <h1>Testing</h1>
-      </main>
-    </div>
-  );
+    const highlighted = projectsData.filter(p => p.highlighted)
+    return (
+        <main className="flex flex-col overflow-y-scroll items-center h-full">
+            <Carousel projects={highlighted} />
+            <Projects projects={projectsData} />
+        </main>
+    );
 }

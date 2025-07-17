@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Topbar from "./components/Topbar";
-import Waves from "./components/Waves";
+import Topbar from "@/app/components/Topbar";
+import Waves from "@/app/components/Waves";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Topbar />
-        {children}
+        <div className="h-[90vh] justify-items-center font-[family-name:var(--font-geist-sans)] bg-primary">
+          {children}
+        </div>
         <Waves />
       </body>
     </html>

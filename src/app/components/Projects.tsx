@@ -1,32 +1,46 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 
-
-function createProjectCards(projects: Array<{image: string; title: string; description: string; link: string}>) {
-    return projects.map((project, index) => (
-        <div key={index} className="dev-border h-[70vh] w-[25vw]">
-            <Image src={project.image} alt={project.title} width={200} height={200} />
-            <h2 className="text-xl">{project.title}</h2>
-            <p>{project.description}</p>
-            <a href={project.link} className="text-blue-500">View Project</a>
-        </div>
-    ))
-};
-
 interface ProjectsProps {
-    projects?: Array<{image: string; title: string; description: string; link: string}>;
+    projects?: Array<{image: string; title: string; date: string; description: string; link: string; highlighted: boolean}>;
 }
 
-
-const Projects: React.FC<ProjectsProps> = ({ projects }) => {
+const Column: React.FC<ProjectsProps> = ({ projects = [] }) => {
     return (
-        <div className="dev-border">
-            <h1 className="text-3xl">Projects</h1>
-            <div className="dev-border flex md:flex-row flex-col gap-4 items-center justify-center">
-                { projects && createProjectCards(projects) }
-            </div>
+        <div className="flex flex-col w-[40vw] items-center gap-y-8">
+            {projects.map((project, idx) => {
+                const [expanded, setExpanded] = React.useState(false);
+                const toggleExpand = () => setExpanded(!expanded);
+
+                return (
+                    <div key={idx} className="h-fit flex flex-col w-full md:w-[40vw] p-8 bg-secondary/10 rounded-2xl shadow-[5px_5px_5px_5px] shadow-secondary/20">
+                        <Image src={project.image} alt={project.title} width={400} height={250} className="min-w-[35vw] self-center rounded-2xl" />
+                        <div className="flex flex-col h-full w-full self-center mt-2">
+                            <h1 className="text-3xl font-bold">{project.title}</h1>
+                            <p className="text-sm">{project.date}</p>
+                            <p className={`mt-2 overflow-y-hidden transition-[max-height] duration-500 ease-in-out ${expanded ? 'max-h-[40vh]' : 'max-h-[15vh]'}`}>{project.description}</p>
+                            <button className="text-accent underline text-sm mt-1 self-start hover:cursor-pointer" onClick={toggleExpand}>{expanded ? 'Less' : 'More...'}</button>
+                            <button className="homebutton my-4 w-[20vw]"><a href={project.link} target="_">View Repository</a></button>
+                        </div>
+                    </div>
+                )
+            })}
         </div>
     )
-};
+}
 
-export default Projects;
+const Projects: React.FC<ProjectsProps> = ({ projects = [] }) => {
+    const leftCol = projects.filter((_, idx) => idx % 2 === 0);
+    const rightCol = projects.filter((_, idx) => idx % 2 !== 0);
+
+    return (
+        <div className="flex flex-row justify-center mt-[15vh] mb-[20vh] gap-x-12">
+            <Column projects={leftCol} />
+            <Column projects={rightCol} />
+        </div>
+    )
+}
+
+export default Projects

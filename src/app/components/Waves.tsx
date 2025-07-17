@@ -4,7 +4,7 @@ let color = "#212121"
 
 const Waves: React.FC = () => {
     return (
-        <div className="w-full absolute bottom-0 left-0 z-10">
+        <div className="w-full absolute bottom-0 left-0 z-10 pointer-events-none">
             <svg className="w-full h-48 md:h-64" viewBox="0 0 1440 320" preserveAspectRatio="none">
                 <path
                     fill={color}

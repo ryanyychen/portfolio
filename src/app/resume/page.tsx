@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ResumePage() {
     return (
-        <div className="relative h-[70vh] w-full m-4 z-20">
+        <main className="relative h-[70vh] w-full z-20">
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <iframe
                     src="YuYouChenResume.pdf"
@@ -11,6 +11,6 @@ export default function ResumePage() {
                     height="650px"
                 />
             </div>
-        </div>
+        </main>
     )
 };

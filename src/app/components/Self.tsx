@@ -17,8 +17,8 @@ const Banner: React.FC = () => {
                     <p className="text-lg md:text-2xl text-center md:text-start mt-2">Master of Science in Computer Science</p>
                     <p className="text-center md:text-start mt-2">University of Southern California</p>
                     <div className="flex flex-row gap-4 mt-4">
-                        <a href="/about"><button>About Me</button></a>
-                        <a href="/projects"><button>Projects</button></a>
+                        <a href="/about"><button className="homebutton">About Me</button></a>
+                        <a href="/projects"><button className="homebutton">Projects</button></a>
                     </div>
                 </div>
             </div>
