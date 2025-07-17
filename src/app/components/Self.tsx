@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { prefix } from '@/app/prefix'
+
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const Banner: React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const Banner: React.FC = () => {
                     alt="Profile Photo"
                     width={500}
                     height={500}
+                    unoptimized
                     className="border-secondary border-8 rounded-full max-h-[35vh] md:max-h-[50vw] max-w-[35vh] md:max-w-[50vw] mx-4 my-4 transition-all duration-300 hover:scale-[1.05]"
                 />
                 <div className="flex flex-col items-center md:items-start justify-center w-full pl-2">
