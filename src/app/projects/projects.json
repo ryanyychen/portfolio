@@ -32,7 +32,7 @@
         "highlighted": false
     },
     {
-        "image": "/ProjectImages/project1.png",
+        "image": "/ProjectImages/Stock-Trader.jpg",
         "title": "RL-Based Stock Trading Agents",
         "date": "March 2025",
         "description": "Built a custom Gymnasium environment for training and evaluating reinforcement learning agents on real-world stock trading tasks using Yahoo Finance data (2014–2024). Implemented and trained Q-Learning, REINFORCE, and A2C algorithms. Evaluated performance with financial metrics such as return percentage, Sharpe ratio, and maximum drawdown.",
