@@ -1,6 +1,6 @@
 import React from "react";
 
-let color = "#212121"
+const color = "#212121"
 
 const Waves: React.FC = () => {
     return (

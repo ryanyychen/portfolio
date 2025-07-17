@@ -8,12 +8,11 @@ interface ProjectsProps {
 }
 
 const Column: React.FC<ProjectsProps> = ({ projects = [] }) => {
+    const [expanded, setExpanded] = React.useState(false);
+    const toggleExpand = () => setExpanded(!expanded);
     return (
         <div className="flex flex-col w-[40vw] items-center gap-y-8">
             {projects.map((project, idx) => {
-                const [expanded, setExpanded] = React.useState(false);
-                const toggleExpand = () => setExpanded(!expanded);
-
                 return (
                     <div key={idx} className="h-fit flex flex-col w-full md:w-[40vw] p-8 bg-secondary/10 rounded-2xl shadow-[5px_5px_5px_5px] shadow-secondary/20">
                         <Image src={project.image} alt={project.title} width={400} height={250} className="min-w-[35vw] self-center rounded-2xl" />
