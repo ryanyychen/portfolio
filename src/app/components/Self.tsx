@@ -6,7 +6,7 @@ const Banner: React.FC = () => {
         <div className="justify-items-center w-full">
             <div className="flex flex-col md:flex-row items-center justify-items-center">
                 <Image
-                    src="/profile-image.jpg"
+                    src="https://ryanyychen.github.io/personal-website/profile-image.jpg"
                     alt="Profile Photo"
                     width={500}
                     height={500}
