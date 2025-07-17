@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -20,8 +21,8 @@ const Banner: React.FC = () => {
                     <p className="text-lg md:text-2xl text-center md:text-start mt-2">Master of Science in Computer Science</p>
                     <p className="text-center md:text-start mt-2">University of Southern California</p>
                     <div className="flex flex-row gap-4 mt-4">
-                        <a href="/about"><button className="homebutton">About Me</button></a>
-                        <a href="/projects"><button className="homebutton">Projects</button></a>
+                        <Link href="/about"><button className="homebutton">About Me</button></Link>
+                        <Link href="/projects"><button className="homebutton">Projects</button></Link>
                     </div>
                 </div>
             </div>
