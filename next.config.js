@@ -1,6 +1,10 @@
+const isGitHubPages = process.env.NEXT_PUBLIC_BASE_PATH === "/personal-website";
+console.log("isGitHubPages:", isGitHubPages);
+
 const nextConfig = {
-  basePath: "/personal-website",
-  output: "export",
+  output: isGitHubPages ? "export" : "",
+  basePath: isGitHubPages ? "/personal-website" : "",
+  assetPrefix: isGitHubPages ? "/personal-website/" : "",
 };
 
 module.exports = nextConfig;

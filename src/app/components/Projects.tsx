@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { prefix } from '@/app/prefix';
 
 interface ProjectsProps {
     projects?: Array<{image: string; title: string; date: string; description: string; link: string; highlighted: boolean}>;
@@ -15,7 +16,7 @@ const Column: React.FC<ProjectsProps> = ({ projects = [] }) => {
             {projects.map((project, idx) => {
                 return (
                     <div key={idx} className="h-fit flex flex-col w-full md:w-[40vw] p-8 bg-secondary/10 rounded-2xl shadow-[5px_5px_5px_5px] shadow-secondary/20">
-                        <Image src={project.image} alt={project.title} width={400} height={250} className="min-w-[35vw] self-center rounded-2xl" />
+                        <Image src={`${prefix}${project.image}`} alt={project.title} width={400} height={250} className="min-w-[35vw] self-center rounded-2xl" />
                         <div className="flex flex-col h-full w-full self-center mt-2">
                             <h1 className="text-3xl font-bold">{project.title}</h1>
                             <p className="text-sm">{project.date}</p>

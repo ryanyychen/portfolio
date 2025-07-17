@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { prefix } from '@/app/prefix';
 
 interface CarouselProps {
     projects?: Array<{image: string; title: string; date: string; description: string; link: string; highlighted: boolean}>;
@@ -22,7 +23,7 @@ const Carousel: React.FC<CarouselProps> = ({ projects = [] }) => {
                         <div className="flex flex-col h-full transition-transform duration-500" style={{ transform: `translateY(-${current * 100}%)` }}>
                             {projects.map((project, idx) => (
                                 <div key={idx} className="flex flex-col md:flex-row min-h-full items-center">
-                                    <Image src={project.image} alt={project.title} width={400} height={250} className="m-4 min-w-[40vw] rounded-2xl" />
+                                    <Image src={`${prefix}${project.image}`} alt={project.title} width={400} height={250} className="m-4 min-w-[40vw] rounded-2xl" />
                                     <div className="flex flex-col h-full w-full justify-center px-2">
                                         <h1 className="text-3xl font-bold">{project.title}</h1>
                                         <p className="mt-2 overflow-y-auto">{project.description}</p>
