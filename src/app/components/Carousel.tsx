@@ -34,7 +34,7 @@ const Carousel: React.FC<CarouselProps> = ({ projects = [] }) => {
                     </div>
                     {/* Carousel Controls */}
                     <div className="flex flex-col w-[5vw] items-center justify-center">
-                        <button onClick={prev} className="p-1 bg-secondary rounded-full m-2 hover:cursor-pointer"><img src="/arrow-up.svg" /></button>
+                        <button onClick={prev} className="p-1 bg-secondary rounded-full m-2 hover:cursor-pointer"><img src="https://ryanyychen.github.io/personal-website/arrow-up.svg" /></button>
                         <div className="flex flex-col gap-y-1">
                             {projects.map((_, idx) => (
                                 <button
@@ -45,7 +45,7 @@ const Carousel: React.FC<CarouselProps> = ({ projects = [] }) => {
                                 />
                             ))}
                         </div>
-                        <button onClick={next} className="p-1 bg-secondary rounded-full m-2 hover:cursor-pointer"><img src="/arrow-down.svg" /></button>
+                        <button onClick={next} className="p-1 bg-secondary rounded-full m-2 hover:cursor-pointer"><img src="https://ryanyychen.github.io/personal-website/arrow-down.svg" /></button>
                     </div>
                 </div>
             )}
