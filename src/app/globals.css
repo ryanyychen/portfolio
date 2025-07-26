@@ -7,8 +7,28 @@
   }
 }
 
+@font-face {
+  font-family: 'Nasalization';
+  src: url('/fonts/Nasalization.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-@theme inline {
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand.ttf') format('truetype');
+  font-weight: 900;
+  font-style: bold;
+}
+
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -16,6 +36,8 @@
   --color-primary: #f4f4f4;
   --color-secondary: #515151;
   --color-accent: #0044ff;
+  --font-nasalization: "Nasalization", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
 }
 
 .homebutton {
@@ -54,4 +76,17 @@
   to {
     transform: translateX(-50%) scaleX(1);
   }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
 }
