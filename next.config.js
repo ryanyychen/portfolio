@@ -3,8 +3,8 @@ console.log("isGitHubPages:", isGitHubPages);
 
 const nextConfig = {
   output: isGitHubPages ? "export" : "standalone",
-  basePath: isGitHubPages ? "/personal-website" : "",
-  assetPrefix: isGitHubPages ? "/personal-website/" : "",
+  basePath: isGitHubPages ? "/portfolio" : "",
+  assetPrefix: isGitHubPages ? "/portfolio/" : "",
 };
 
 module.exports = nextConfig;
