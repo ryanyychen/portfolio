@@ -19,7 +19,7 @@ const skills = [
 const Skills: React.FC = () => {
     return (
         <div className="flex flex-col items-center mb-[5vh]">
-            <h1 className="text-5xl font-nasalization">Skills</h1>
+            <h1 className="text-5xl font-audiowide">Skills</h1>
             <div className="relative w-[80vw] md:w-[70vw] h-[10vh] overflow-hidden py-6 mt-[3vh]">
                 <div className="absolute flex animate-marquee whitespace-nowrap">
                     {[...skills, ...skills].map((skill, idx) => (
