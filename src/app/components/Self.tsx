@@ -16,7 +16,7 @@ const Banner: React.FC = () => {
                 />
                 <div className="flex flex-col items-center md:items-start justify-center w-full pl-2">
                     <h1 className="text-3xl md:text-6xl font-bold text-center md:text-start">Yu You (Ryan) Chen</h1>
-                    <p className="text-lg md:text-xl text-center md:text-start mt-2 md:pr-[10vw]">I am a Master's student studying Computer Science interested in developing cool software. I enjoy tinkering with new technology to create globally relevant solutions.</p>
+                    <p className="text-lg md:text-xl text-center md:text-start mt-2 md:pr-[10vw]">I am a graduate student studying Computer Science interested in developing cool software. I enjoy tinkering with new technology to create globally relevant solutions.</p>
                     <div className="flex flex-row gap-4 mt-4">
                         <Link href="/resume"><button className="homebutton">Resume</button></Link>
                     </div>
