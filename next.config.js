@@ -1,4 +1,4 @@
-const isGitHubPages = process.env.NEXT_PUBLIC_BASE_PATH === "/personal-website";
+const isGitHubPages = process.env.NEXT_PUBLIC_BASE_PATH === "/portfolio";
 console.log("isGitHubPages:", isGitHubPages);
 
 const nextConfig = {
