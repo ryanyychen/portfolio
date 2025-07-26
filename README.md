@@ -1,4 +1,4 @@
-https://ryanyychen.github.io/personal-website/
+https://ryanyychen.github.io/portfolio/
 
 ![Website Homepage](./public/Home.png)
 
