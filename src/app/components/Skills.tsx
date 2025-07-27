@@ -10,6 +10,7 @@ const skills = [
     { name: 'TypeScript', image: '/skills/ts.svg' },
     { name: 'React', image: '/skills/react.svg' },
     { name: 'Next.js', image: '/skills/nextjs.svg' },
+    { name: 'TailwindCSS', image: '/skills/tailwind.svg' },
     { name: 'Python', image: '/skills/python.svg' },
     { name: 'Java', image: '/skills/java.svg' },
     { name: 'C/C++', image: '/skills/c.svg' },
@@ -18,9 +19,9 @@ const skills = [
 
 const Skills: React.FC = () => {
     return (
-        <div className="flex flex-col items-center mb-[5vh]">
-            <h1 className="text-5xl font-audiowide">Skills</h1>
-            <div className="relative w-[80vw] md:w-[70vw] h-[10vh] overflow-hidden py-6 mt-[3vh]">
+        <div className="flex flex-col items-center mb-[3vh]">
+            <h1 className="section-title">Skills</h1>
+            <div className="relative w-[80vw] md:w-[70vw] h-[14vh] justify-center items-center overflow-hidden py-6 mt-[3vh]">
                 <div className="absolute flex animate-marquee whitespace-nowrap">
                     {[...skills, ...skills].map((skill, idx) => (
                         <div key={idx} className="inline-block px-4 md:px-10 text-center">
