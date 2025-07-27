@@ -10,9 +10,9 @@ interface ResumeOverlayProps {
 }
 
 const ResumeOverlay: React.FC<ResumeOverlayProps> = ({ isOpen, onClose }) => {
-    if (!isOpen) return null;
-
     const isSmallScreen = useIsSmallScreen();
+    
+    if (!isOpen) return null;
 
     return (
         <div className="fixed inset-0 z-50 bg-black/70 flex justify-center items-center" onClick={onClose}>
