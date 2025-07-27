@@ -1,7 +1,7 @@
 import Self from "@/app/components/Self";
 import Skills from "@/app/components/Skills";
 import Projects from "@/app/components/Projects";
-import projectsData from "@/app/projects/projects.json";
+import projectsData from "@/app/projects.json";
 
 export default function Home() {
   return (
