@@ -79,6 +79,11 @@
 .section-title {
   font-family: var(--font-audiowide);
   font-size: var(--text-5xl);
+  transition: transform 0.3s;
+}
+
+.section-title:hover {
+  transform: scale(1.1);
 }
 
 .section {
@@ -104,9 +109,15 @@
   scale: 1.1;
 }
 
-@keyframes underline-reveal {
+@keyframes drawOutline {
   to {
-    transform: translateX(-50%) scaleX(1);
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillIn {
+  to {
+    fill-opacity: 1;
   }
 }
 
@@ -117,6 +128,25 @@
   100% {
     transform: translateX(-50%);
   }
+}
+
+.animated-signature {
+  stroke: var(--color-primary);
+  stroke-width: 2;
+  fill: var(--color-primary);
+  fill-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  animation: none
+}
+
+.animated-signature.animate {
+  stroke: black;
+  stroke-width: 2;
+  fill: black;
+  animation:
+    drawOutline 2.5s ease forwards,
+    fillIn 0.5s ease forwards 2.5s;
 }
 
 .animate-marquee {

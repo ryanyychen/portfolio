@@ -1,5 +1,13 @@
+'use client';
+
+import React from 'react';
+import { useEffect, useState } from "react";
+
 import Self from "@/app/components/Self";
+import Waves from "@/app/components/Waves";
+import Navbar from "@/app/components/Navbar";
 import Skills from "@/app/components/Skills";
+import Loading from "@/app/components/Loading";
 import Projects from "@/app/components/Projects";
 import Education from "@/app/components/Education";
 import Experience from "@/app/components/Experience";
@@ -8,15 +16,34 @@ import projectsData from "@/app/projects.json";
 import experienceData from "@/app/experience.json";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
-    <div className="w-full h-[90vh] justify-items-center overflow-y-scroll font-[family-name:var(--font-geist-sans)] bg-primary">
-      <main className="flex flex-col items-center h-full pt-[5vh]">
-        <Self />
-        <Experience experiences={experienceData} />
-        <Skills />
-        <Projects projects={projectsData} />
-        <Education />
-      </main>
+    <div className="w-full h-[100vh] justify-items-center overflow-y-scroll font-[family-name:var(--font-geist-sans)] bg-primary">
+      {isLoading && (
+        <div className="absolute inset-0 z-50">
+          <Loading />
+        </div>
+      )}
+      <div className={`${isLoading ? "invisible" : "visible"} transition-opacity duration-500`}>
+        <main className="flex flex-col items-center h-full">
+          <Navbar />
+          <Self isReady={!isLoading}/>
+          <Experience experiences={experienceData} />
+          <Skills />
+          <Projects projects={projectsData} />
+          <Education />
+          <Waves />
+        </main>
+      </div>
     </div>
   );
 }

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/app/components/Navbar";
-import Waves from "@/app/components/Waves";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,6 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -74,11 +73,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        <div className="h-[90vh] justify-items-center font-[family-name:var(--font-geist-sans)] bg-primary">
+        <div className="h-[100vh] justify-items-center font-[family-name:var(--font-geist-sans)] bg-primary">
           {children}
         </div>
-        <Waves />
       </body>
     </html>
   );
