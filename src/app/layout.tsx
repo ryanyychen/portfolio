@@ -15,9 +15,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ryan Chen's Portfolio",
-  description: "A showcase of my projects and skills in computer science.",
+  title: "Ryan Chen | Software Engineer & MSCS Student at USC",
+  description:
+    "Portfolio of Ryan Chen, a computer science graduate student at USC specializing in AI, machine learning, and full-stack development. Explore my projects, skills, and experience.",
+  keywords: [
+    "Ryan Chen",
+    "Software Engineer",
+    "Computer Science Portfolio",
+    "USC MSCS",
+    "AI Projects",
+    "Machine Learning",
+    "Full Stack Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Langchain",
+    "OpenAI",
+    "Reinforcement Learning",
+  ],
+  authors: [{ name: "Ryan Chen", url: "https://ryanyychen.github.io/portfolio" }],
+  openGraph: {
+    title: "Ryan Chen | Software Engineer & MSCS Student",
+    description:
+      "Explore the portfolio of Ryan Chen: AI/ML enthusiast, full-stack developer, and USC MSCS student. Featuring cutting-edge projects in reinforcement learning, legaltech, and more.",
+    url: "https://ryanyychen.github.io/portfolio",
+    siteName: "Ryan Chen Portfolio",
+    images: [
+      {
+        url: "https://ryanyychen.github.io/portfolio/og-Home.png",
+        width: 1200,
+        height: 630,
+        alt: "Ryan Chen Portfolio Preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ryan Chen | Software Engineer & MSCS Student",
+    description:
+      "Visit Ryan Chen's portfolio showcasing projects in AI, ML, and full-stack development. Currently pursuing an MSCS at USC.",
+    images: ["https://ryanyychen.github.io/portfolio/Home.png"],
+  },
 };
+
 
 export default function RootLayout({
   children,
