@@ -26,7 +26,7 @@ const ResumeOverlay: React.FC<ResumeOverlayProps> = ({ isOpen, onClose }) => {
                 {isSmallScreen
                 ? (
                     <div className="flex flex-col items-center justify-center h-full p-4 text-center text-black">
-                        <p className="mb-4 text-2xl font-quicksand">Mobile devices don't support embedded PDF viewing.</p>
+                        <p className="mb-4 text-2xl font-quicksand">Mobile devices don&apos;t support embedded PDF viewing.</p>
                         <a
                             href={`${prefix}/YuYouChenResume.pdf`}
                             target="_blank"
