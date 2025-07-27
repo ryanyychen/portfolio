@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { prefix } from '@/app/prefix';
 
-const Banner: React.FC = () => {
+const Self: React.FC = () => {
     return (
-        <div className="justify-items-center w-full min-h-[85vh]">
+        <div className="justify-items-center w-full lg:w-[80vw] min-h-[85vh]">
             <div className="flex flex-col md:flex-row items-center justify-items-center">
                 <Image
                     src={`${prefix}/profile-image.jpg`}
@@ -26,4 +26,4 @@ const Banner: React.FC = () => {
     )
 }
 
-export default Banner;
+export default Self;
