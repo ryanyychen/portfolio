@@ -5,7 +5,6 @@ export function useIsSmallScreen(breakpoint = 768) {
 
   useEffect(() => {
     const check = () => {
-      console.log(window.innerWidth, breakpoint);
       setIsSmall(window.innerWidth < breakpoint);
     };
 
