@@ -6,7 +6,7 @@ interface ExperienceProps {
 
 const Experience: React.FC<ExperienceProps> = ({ experiences = [] }) => {
     return (
-        <div className="flex flex-col items-center justify-center w-full gap-4">
+        <div className="flex flex-col items-center justify-center w-full gap-4 mt-0 section">
             <h1 className="section-title">Experience</h1>
             {experiences.map((experience, idx) => {
                 return (

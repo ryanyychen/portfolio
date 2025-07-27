@@ -5,7 +5,7 @@ import { prefix } from '@/app/prefix';
 
 const Self: React.FC = () => {
     return (
-        <div className="justify-items-center w-full lg:w-[80vw] min-h-[85vh]">
+        <div className="justify-items-center w-full lg:w-[80vw] min-h-[80vh]">
             <div className="flex flex-col md:flex-row items-center justify-items-center">
                 <Image
                     src={`${prefix}/profile-image.jpg`}

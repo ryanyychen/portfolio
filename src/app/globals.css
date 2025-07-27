@@ -81,6 +81,11 @@
   font-size: var(--text-5xl);
 }
 
+.section {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
 .homebutton {
   background-color: var(--color-secondary);
   font-family: "Audiowide", sans-serif;

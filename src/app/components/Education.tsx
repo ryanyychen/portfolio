@@ -12,7 +12,7 @@ const Education: React.FC = () => {
     const ucsd = smallScreen ? "UC San Diego" : "University of Southern California";
     const bachelors = smallScreen ? "B.S. Math-CS" : "Bachelor of Science, Mathematics-Computer Science";
     return (
-        <div className="flex flex-col items-center justify-center w-full gap-4">
+        <div className="flex flex-col items-center justify-center w-full gap-4 section">
             <h1 className="section-title">Education</h1>
             <div className="flex flex-row items-center gap-4">
                 <Image src={`${prefix}/usc.svg`} alt="USC Logo" width={100} height={100} className="h-[10vh] md:h-[15vh] w-auto" />

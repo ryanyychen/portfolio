@@ -48,11 +48,11 @@ const Projects: React.FC<ProjectsProps> = ({ projects = [] }) => {
     }
 
     return (
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center section">
             <h1 className="section-title">
                 Projects
             </h1>
-            <div className="flex flex-row w-[80vw] justify-center mt-[3vh] mb-[5vh]">
+            <div className="flex flex-row w-[80vw] justify-center mt-[3vh]">
                 {(smallScreen || mediumScreen)
                 ? (
                     mediumScreen
