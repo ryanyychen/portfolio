@@ -6,7 +6,7 @@ import { prefix } from '@/app/prefix';
 import { useIsSmallScreen, useIsMediumScreen } from '@/app/utils';
 
 interface ProjectsProps {
-    projects?: Array<{image: string; title: string; date: string; description: string; link: string; highlighted: boolean}>;
+    projects?: Array<{image: string; title: string; date: string; description: string; link: string;}>;
 }
 
 const Column: React.FC<ProjectsProps> = ({ projects = [] }) => {
@@ -49,10 +49,10 @@ const Projects: React.FC<ProjectsProps> = ({ projects = [] }) => {
 
     return (
         <div className="flex flex-col items-center">
-            <h1 className="text-5xl font-audiowide">
+            <h1 className="section-title">
                 Projects
             </h1>
-            <div className="flex flex-row w-[80vw] justify-center mt-[3vh] mb-[20vh]">
+            <div className="flex flex-row w-[80vw] justify-center mt-[3vh] mb-[5vh]">
                 {(smallScreen || mediumScreen)
                 ? (
                     mediumScreen
