@@ -76,6 +76,11 @@
   --font-italianno: "Italianno", sans-serif;
 }
 
+.section-title {
+  font-family: var(--font-audiowide);
+  font-size: var(--text-5xl);
+}
+
 .homebutton {
   background-color: var(--color-secondary);
   font-family: "Audiowide", sans-serif;
