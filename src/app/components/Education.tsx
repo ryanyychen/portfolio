@@ -7,10 +7,10 @@ import { useIsSmallScreen } from '@/app/utils';
 
 const Education: React.FC = () => {
     const smallScreen = useIsSmallScreen();
-    let usc = smallScreen ? "Southern Cal" : "University of California, San Diego";
-    let masters = smallScreen ? "M.S. CS" : "Master of Science, Computer Science";
-    let ucsd = smallScreen ? "UC San Diego" : "University of Southern California";
-    let bachelors = smallScreen ? "B.S. Math-CS" : "Bachelor of Science, Mathematics-Computer Science";
+    const usc = smallScreen ? "Southern Cal" : "University of California, San Diego";
+    const masters = smallScreen ? "M.S. CS" : "Master of Science, Computer Science";
+    const ucsd = smallScreen ? "UC San Diego" : "University of Southern California";
+    const bachelors = smallScreen ? "B.S. Math-CS" : "Bachelor of Science, Mathematics-Computer Science";
     return (
         <div className="flex flex-col items-center justify-center w-full gap-4">
             <h1 className="section-title">Education</h1>
