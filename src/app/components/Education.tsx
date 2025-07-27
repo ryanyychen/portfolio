@@ -8,7 +8,7 @@ import { useIsSmallScreen } from '@/app/utils';
 const Education: React.FC = () => {
     const smallScreen = useIsSmallScreen();
     const usc = smallScreen ? "Southern Cal" : "University of California, San Diego";
-    const masters = smallScreen ? "M.S. CS" : "Master of Science, Computer Science";
+    const masters = smallScreen ? "M.S. Comp Sci" : "Master of Science, Computer Science";
     const ucsd = smallScreen ? "UC San Diego" : "University of Southern California";
     const bachelors = smallScreen ? "B.S. Math-CS" : "Bachelor of Science, Mathematics-Computer Science";
     return (
