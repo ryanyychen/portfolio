@@ -4,13 +4,9 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navLinks = [
-    { href: "/resume", label: "Resume", id: "resume" },
-];
-
 const Navbar: React.FC = () => {
     const pathname = usePathname();
-    let resumeActive = pathname === "/resume";
+    const resumeActive = pathname === "/resume";
 
     return (
         <nav className="flex items-center justify-between px-8 py-2 bg-primary text-secondary h-[10vh] w-full">
