@@ -11,12 +11,14 @@ import Loading from "@/app/components/Loading";
 import Projects from "@/app/components/Projects";
 import Education from "@/app/components/Education";
 import Experience from "@/app/components/Experience";
+import ResumeOverlay from "@/app/components/ResumeOverlay";
 
 import projectsData from "@/app/projects.json";
 import experienceData from "@/app/experience.json";
 
 export default function Home() {
   const [isLoading, setIsLoading] = React.useState(true);
+  const [isResumeOpen, setIsResumeOpen] = React.useState(false);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -35,8 +37,9 @@ export default function Home() {
       )}
       <div className={`${isLoading ? "invisible" : "visible"} transition-opacity duration-500`}>
         <main className="flex flex-col items-center h-full">
-          <Navbar />
-          <Self isReady={!isLoading}/>
+          <Navbar onResumeClick={() => setIsResumeOpen(true)}/>
+          <ResumeOverlay isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
+          <Self isReady={!isLoading} onResumeClick={() => setIsResumeOpen(true)}/>
           <Experience experiences={experienceData} />
           <Skills />
           <Projects projects={projectsData} />

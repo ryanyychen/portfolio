@@ -8,9 +8,10 @@ import { motion } from 'framer-motion';
 
 interface SelfProps {
     isReady: boolean;
+    onResumeClick: () => void;
 }
 
-const Self: React.FC<SelfProps> = ({ isReady }) => {
+const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
     return (
         <div className="justify-items-center w-full lg:w-[80vw] min-h-[80vh]">
             <div className="flex flex-col md:flex-row h-[70vh] items-center justify-items-center">
@@ -32,7 +33,7 @@ const Self: React.FC<SelfProps> = ({ isReady }) => {
                     </motion.h1>
                     <p className="text-lg md:text-xl text-center font-quicksand md:text-start mt-2 md:pr-[10vw] select-none">I am a graduate student studying Computer Science interested in developing cool software. I enjoy tinkering with new technology to create globally relevant solutions.</p>
                     <div className="flex flex-row gap-4 mt-4">
-                        <Link href="/resume"><button className="homebutton select-none">Resume</button></Link>
+                        <button onClick={onResumeClick} className="homebutton select-none">Resume</button>
                     </div>
                 </div>
             </div>
