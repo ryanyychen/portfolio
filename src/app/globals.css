@@ -81,7 +81,7 @@
   -ms-overflow-style: none;
 }
 
-.scrollbaro-hide::-webkit-scrollbar {
+.scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 

@@ -6,7 +6,7 @@ import Signature from "@/app/components/Signature";
 const Loading: React.FC = () => {
     return (
         <motion.div
-            className="w-screen h-screen bg-primary flex items-center justify-center"
+            className="w-screen h-screen bg-primary flex items-center justify-center scrollbar-hide"
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}

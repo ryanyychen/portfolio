@@ -71,9 +71,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Italianno&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scrollbar-hide`}
       >
-        <div className="h-[100vh] justify-items-center font-[family-name:var(--font-geist-sans)] bg-primary">
+        <div className="h-[100vh] justify-items-center font-[family-name:var(--font-geist-sans)] bg-primary scrollbar-hide">
           {children}
         </div>
       </body>

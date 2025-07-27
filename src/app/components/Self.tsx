@@ -25,12 +25,20 @@ const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={ isReady ? { opacity: 1, y: 0 } : {} }
-                        transition={{ duration: 2, ease: "easeOut" }}
+                        transition={{ duration: 1.5, ease: "easeOut" }}
                         className="text-5xl md:text-7xl font-bold font-italianno text-center md:text-start select-none"
                     >
                         Yu You (Ryan) Chen
                     </motion.h1>
-                    <p className="text-lg md:text-xl text-center font-quicksand md:text-start mt-2 md:pr-[10vw] select-none">I am a graduate student studying Computer Science interested in developing cool software. I enjoy tinkering with new technology to create globally relevant solutions.</p>
+                    <motion.p
+                        initial={{ opacity: 0, x: 40}}
+                        animate={ isReady ? { opacity: 1, x: 0 } : {}}
+                        transition={{ duration: 1.5, ease: "easeOut" }}
+                        className="text-lg md:text-xl text-center font-quicksand md:text-start mt-2 md:pr-[10vw] select-none"
+                    >
+                        I&apos;m a computer science graduate student at USC interested in developing cool software. I enjoy tinkering with new technology to create globally relevant solutions.
+                    </motion.p>
+                    <p ></p>
                     <div className="flex flex-row gap-4 mt-4">
                         <button onClick={onResumeClick} className="homebutton select-none">Resume</button>
                     </div>
