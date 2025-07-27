@@ -1,0 +1,23 @@
+[
+    {
+        "position": "Lead Software Engineer",
+        "company": "IEEE HKN Honors Society at UCSD",
+        "start": "Jan 2023",
+        "end": "Jun 2025",
+        "description": "Led an 8-person development team by delegating tasks, setting sprint goals, and ensuring timely delivery of key software projects. Contacted other organization branches to gather requirements and translate needs into actionable development plans. Facilitated regular standups, code reviews, and retrospectives to maintain high development velocity and code quality. Oversaw the full project lifecycle—from planning and design through deployment—while ensuring alignment with user needs."
+    },
+    {
+        "position": "Software Engineer Intern",
+        "company": "Project Falcon (Startup)",
+        "start": "Jun 2024",
+        "end": "Dec 2024",
+        "description": "Served as the primary software engineer at a seed-stage LegalTech startup, producing a functional pipeline within 4 weeks. Designed and developed a chatbot prototype to analyze legal documents using OpenAI’s ChatGPT-3.5-turbo and Langchain. Fine-tuned Dolly 2.0 with synthetic data on Amazon EC2, optimizing large-scale models for complex document processing tasks. Built robust document ingestion and retrieval systems using Pinecone, improving overall system scalability for high-demand uses."
+    },
+    {
+        "position": "CS Instructional Assistant",
+        "company": "UC San Diego Computer Science Department",
+        "start": "Mar 2024",
+        "end": "Dec 2024",
+        "description": "Provided assistance to 460+ students in Advanced Data Structures, focusing on code optimization and debugging techniques. Collaborated with faculty to support educational initiatives while enhancing student engagement and performance."
+    }
+]

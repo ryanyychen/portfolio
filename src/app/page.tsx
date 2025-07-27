@@ -12,6 +12,7 @@ export default function Home() {
     <div className="w-full h-[90vh] justify-items-center overflow-y-scroll font-[family-name:var(--font-geist-sans)] bg-primary">
       <main className="flex flex-col items-center h-full pt-[5vh]">
         <Self />
+        <Experience experiences={experienceData} />
         <Skills />
         <Projects projects={projectsData} />
         <Education />
