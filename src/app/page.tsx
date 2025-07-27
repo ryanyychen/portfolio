@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import Self from "@/app/components/Self";
 import Waves from "@/app/components/Waves";
