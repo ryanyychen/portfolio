@@ -29,14 +29,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full h-[100vh] justify-items-center overflow-y-scroll font-[family-name:var(--font-geist-sans)] bg-primary">
+    <div className="h-[100vh] justify-items-center overflow-y-scroll scrollbar-hide font-[family-name:var(--font-geist-sans)] bg-primary">
       {isLoading && (
         <div className="absolute inset-0 z-50">
           <Loading />
         </div>
       )}
       <div className={`${isLoading ? "invisible" : "visible"} transition-opacity duration-500`}>
-        <main className="flex flex-col items-center h-full">
+        <main className="flex flex-col items-center w-[100vw] h-full">
           <Navbar onResumeClick={() => setIsResumeOpen(true)}/>
           <ResumeOverlay isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
           <Self isReady={!isLoading} onResumeClick={() => setIsResumeOpen(true)}/>

@@ -76,6 +76,15 @@
   --font-italianno: "Italianno", sans-serif;
 }
 
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbaro-hide::-webkit-scrollbar {
+  display: none;
+}
+
 .section-title {
   font-family: var(--font-audiowide);
   font-size: var(--text-5xl);
