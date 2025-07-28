@@ -14,7 +14,7 @@ interface SelfProps {
 const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
     const isSmallScreen = useIsSmallScreen();
     return (
-        <div className="justify-items-center w-full lg:w-[80vw] min-h-[85vh]">
+        <div className="justify-items-center w-full lg:w-[80vw] min-h-[90vh]">
             <div className="flex flex-col md:flex-row h-[70vh] items-center justify-items-center">
                 <Image
                     src={`${prefix}/profile-image.jpg`}
@@ -29,9 +29,9 @@ const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={ isReady ? { opacity: 1, y: 0 } : {} }
                         transition={{ duration: 1.5, ease: "easeOut" }}
-                        className="text-5xl md:text-7xl font-bold font-italianno text-center md:text-start select-none"
+                        className="text-7xl md:text-8xl font-bold font-italianno text-center md:text-start select-none"
                     >
-                        Yu You (Ryan) Chen
+                        Ryan Chen
                     </motion.h1>
                     <motion.p
                         initial={isSmallScreen? { opacity: 0, x: 40 } : { opacity: 0, y: -20 }}
