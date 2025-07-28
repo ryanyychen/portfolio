@@ -12,7 +12,7 @@ interface SelfProps {
 
 const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
     return (
-        <div className="justify-items-center w-full lg:w-[80vw] min-h-[80vh]">
+        <div className="justify-items-center w-full lg:w-[80vw] min-h-[85vh]">
             <div className="flex flex-col md:flex-row h-[70vh] items-center justify-items-center">
                 <Image
                     src={`${prefix}/profile-image.jpg`}
