@@ -33,7 +33,7 @@ const Education: React.FC = () => {
                 initial={{ opacity: 0, y: -30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
-                className="flex flex-row items-center gap-4 mb-[20vh]">
+                className="flex flex-row items-center gap-4">
                 <Image src={`${prefix}/ucsd.svg`} alt="UCSD Logo" width={100} height={100} className="h-[10vh] md:h-[15vh] w-auto" />
                 <div className="flex flex-col items-start w-[45vw] md:w-[40vw]">
                     <h2 className="text-2xl md:text-3xl">{ucsd}</h2>

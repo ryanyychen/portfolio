@@ -7,6 +7,7 @@ import Self from "@/app/components/Self";
 import Waves from "@/app/components/Waves";
 import Navbar from "@/app/components/Navbar";
 import Skills from "@/app/components/Skills";
+import Connect from "@/app/components/Connect";
 import Loading from "@/app/components/Loading";
 import Projects from "@/app/components/Projects";
 import Education from "@/app/components/Education";
@@ -44,6 +45,8 @@ export default function Home() {
           <Skills />
           <Projects projects={projectsData} />
           <Education />
+          <Connect />
+          <div id="spacing" className="h-[20vh] w-full"></div>
           <Waves />
         </main>
       </div>
