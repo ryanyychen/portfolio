@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { prefix } from '@/app/prefix';
 import { motion } from 'framer-motion';
+import { useIsSmallScreen } from '@/app/utils';
 
 interface SelfProps {
     isReady: boolean;
@@ -11,6 +12,7 @@ interface SelfProps {
 }
 
 const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
+    const isSmallScreen = useIsSmallScreen();
     return (
         <div className="justify-items-center w-full lg:w-[80vw] min-h-[85vh]">
             <div className="flex flex-col md:flex-row h-[70vh] items-center justify-items-center">
@@ -19,6 +21,7 @@ const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
                     alt="Profile Photo"
                     width={500}
                     height={500}
+                    priority
                     className="border-secondary border-8 rounded-full max-h-[35vh] md:max-h-[50vw] max-w-[35vh] md:max-w-[50vw] mx-4 my-4 transition-all duration-300 hover:scale-[1.05]"
                 />
                 <div className="flex flex-col items-center md:items-start justify-center w-full pl-2">
@@ -31,8 +34,8 @@ const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
                         Yu You (Ryan) Chen
                     </motion.h1>
                     <motion.p
-                        initial={{ opacity: 0, x: 40}}
-                        animate={ isReady ? { opacity: 1, x: 0 } : {}}
+                        initial={isSmallScreen? { opacity: 0, x: 40 } : { opacity: 0, y: -20 }}
+                        animate={ isReady ? { opacity: 1, x: 0, y: 0 } : {}}
                         transition={{ duration: 1.5, ease: "easeOut" }}
                         className="text-lg md:text-xl text-center font-quicksand md:text-start mt-2 md:pr-[10vw] select-none"
                     >
