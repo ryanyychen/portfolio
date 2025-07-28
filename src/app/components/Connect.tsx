@@ -6,7 +6,7 @@ const Connect: React.FC = () => {
     return (
         <div className="flex flex-col items-center justify-center section">
             <h1 className="section-title">Let&apos;s Connect!</h1>
-            <div className="flex flex-row w-[90vw] md:w-[40vw] mt-[3vh]">
+            <div className="flex flex-row w-[70vw] md:w-[40vw] mt-[3vh] justify-between">
                 <div className="flex flex-col items-start w-[40vw] gap-6">
                     <div
                         onClick={() => window.open("mailto:yuyou.chen@usc.edu", "_blank")}
