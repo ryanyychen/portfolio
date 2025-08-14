@@ -30,7 +30,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-[100vh] justify-items-center overflow-y-scroll scrollbar-hide font-[family-name:var(--font-geist-sans)] bg-primary">
+    <div 
+      id="page"
+      className="h-[100vh] justify-items-center overflow-y-scroll scrollbar-hide font-[family-name:var(--font-geist-sans)] bg-primary">
       {isLoading && (
         <div className="absolute inset-0 z-50">
           <Loading />
