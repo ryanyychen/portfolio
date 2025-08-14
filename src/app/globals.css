@@ -70,7 +70,8 @@
   --font-mono: var(--font-geist-mono);
   --color-primary: #f4f4f4;
   --color-secondary: #515151;
-  --color-accent: #2563eb;
+  --color-accent: #63157a;
+  --color-highlight: #63157a;
   --font-quicksand: "Quicksand", sans-serif;
   --font-audiowide: "Audiowide", sans-serif;
   --font-italianno: "Italianno", sans-serif;

@@ -4,34 +4,39 @@
         "title": "RL Autonomous Vehicle",
         "date": "June 2025",
         "description": "Developed a custom wrapper around the highway-env intersection scenario to evaluate and benchmark reinforcement learning algorithms for autonomous driving. Implemented a reward structure focused on safety and route completion using Python and Gymnasium. Trained and compared DQN, REINFORCE, A2C, SAC, and PPO, achieving strong results within 200k training steps.",
-        "link": "https://github.com/ryanyychen/rl-autonomous-vehicle"
+        "link": "https://github.com/ryanyychen/rl-autonomous-vehicle",
+        "tags": ["Python", "PPO", "Gymnasium", "highway-env"]
     },
     {
         "image": "/projects/Personal-TA.png",
         "title": "Personal TA",
         "date": "March 2025",
         "description": "Built a personal AI-powered teaching assistant using Retrieval-Augmented Generation (RAG) to provide fast, context-aware tutoring via the Gemini API. Leveraged Qdrant Cloud and embedding models for efficient context retrieval, and integrated a pre-trained LLM for structured, accurate responses. Achieved high performance with 3.7s average response time and optimized document processing and retrieval speeds over large course materials.",
-        "link": "https://github.com/ryanyychen/cse156-final-project"
+        "link": "https://github.com/ryanyychen/cse156-final-project",
+        "tags": ["Python", "RAG", "Gemini API", "Qdrant Cloud"]
     },
     {
         "image": "/projects/HKN-Portal.png",
         "title": "HKN Membership Portal",
         "date": "June 2025",
         "description": "Developed a full-stack membership system for HKN’s induction workflows using Django, Svelte, JavaScript, and AWS EC2. Implemented secure authentication, role-based access control, and dynamic dashboards for over 1,000 active users. Designed a microservice-based architecture with integrated CI/CD pipelines to ensure scalability and reliability.",
-        "link": "https://github.com/HKN-UCSD/hkn-portal"
+        "link": "https://github.com/HKN-UCSD/hkn-portal",
+        "tags": ["Django", "Svelte", "SQLite", "AWS EC2"]
     },
     {
         "image": "/projects/NYT-Connections.png",
         "title": "AI for NYT Connections",
         "date": "March 2025",
         "description": "Developed AI agents to solve The New York Times Connections game using Sentence-BERT clustering, Transformer models, and REINFORCE-based reinforcement learning. Designed evaluation strategies against a random-guessing baseline and analyzed performance using metrics like average guesses and Jaccard similarity. Focused on optimizing semantic grouping and decision-making through NLP and RL techniques.",
-        "link": "https://github.com/ryanyychen/ai-nyt-connections"
+        "link": "https://github.com/ryanyychen/ai-nyt-connections",
+        "tags": ["NLP", "Transformers", "REINFORCE"]
     },
     {
         "image": "/projects/Stock-Trader.jpg",
         "title": "RL-Based Stock Trading Agents",
         "date": "March 2025",
         "description": "Built a custom Gymnasium environment for training and evaluating reinforcement learning agents on real-world stock trading tasks using Yahoo Finance data (2014–2024). Implemented and trained Q-Learning, REINFORCE, and A2C algorithms. Evaluated performance with financial metrics such as return percentage, Sharpe ratio, and maximum drawdown.",
-        "link": "https://github.com/ryanyychen/rl-stock-agents"
+        "link": "https://github.com/ryanyychen/rl-stock-agents",
+        "tags": ["Gymnasium", "Q-Learning", "REINFORCE", "A2C"]
     }
 ]

@@ -6,7 +6,7 @@ import { prefix } from '@/app/prefix';
 import { useIsSmallScreen, useIsMediumScreen } from '@/app/utils';
 
 interface ColumnProps {
-    projects?: Array<{image: string; title: string; date: string; description: string; link: string;}>;
+    projects?: Array<{image: string; title: string; date: string; description: string; link: string; tags: string[]}>;
     numCols: number;
     offset: number;
     expandedIndex: number | null;
@@ -14,7 +14,7 @@ interface ColumnProps {
 }
 
 interface ProjectsProps {
-    projects?: Array<{image: string; title: string; date: string; description: string; link: string;}>;
+    projects?: Array<{image: string; title: string; date: string; description: string; link: string; tags: string[]}>;
 }
 
 const Column: React.FC<ColumnProps> = ({ projects = [], numCols, offset, expandedIndex, setExpandedIndex }) => {
@@ -28,11 +28,7 @@ const Column: React.FC<ColumnProps> = ({ projects = [], numCols, offset, expande
                 const isExpanded = expandedIndex === globalIndex;
                 return (
                     <div
-                        // ref={cardRef}
                         key={idx}
-                        // initial={{ opacity: 0 }}
-                        // animate={isInView ? { opacity: 1 } : {}}
-                        // transition={{ duration: 1, delay: idx * 0.2 }}
                         className="h-fit flex flex-col w-full lg:w-[25vw] p-8 rounded-2xl border-2 border-secondary hover:scale-[1.05] transition-all duration-300">
                         <Image src={`${prefix}${project.image}`} alt={project.title} width={400} height={250} className=" max-w-[70vw] md:max-w-[30vw] lg:max-w-[20vw] self-center rounded-2xl" />
                         <div className="flex flex-col h-full w-full self-center mt-2">
@@ -41,6 +37,11 @@ const Column: React.FC<ColumnProps> = ({ projects = [], numCols, offset, expande
                             <p className={`mt-2 overflow-y-hidden transition-[max-height] duration-500 ease-in-out ${isExpanded ? 'max-h-[50vh]' : 'max-h-[15vh]'}`}>{project.description}</p>
                             <button className="text-accent underline text-sm mt-1 self-start hover:cursor-pointer" onClick={() => toggleExpand(globalIndex)}>{isExpanded ? 'Less' : 'More...'}</button>
                             <button className="homebutton my-4 w-[40vw] md:w-[30vw] lg:w-[20vw] self-center md:self-start"><a href={project.link} target="_">View Repository</a></button>
+                            <div className="flex flex-wrap gap-2 mt-2">
+                                {project.tags.map((tag, tagIdx) => (
+                                    <span key={tagIdx} className="text-sm font-quicksand bg-accent/70 text-primary px-2 py-1 rounded-full">{tag}</span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 )
