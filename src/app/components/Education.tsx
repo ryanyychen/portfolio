@@ -1,8 +1,6 @@
 'use client';
 
 import React, { useRef } from 'react';
-import Image from 'next/image';
-import { prefix } from '@/app/prefix';
 import { useIsSmallScreen } from '@/app/utils';
 import { motion, useInView } from 'framer-motion';
 
