@@ -29,7 +29,7 @@ const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={ isReady ? { opacity: 1, y: 0 } : {} }
                         transition={{ duration: 1.5, ease: "easeOut" }}
-                        className="text-7xl md:text-8xl font-bold font-italianno text-center md:text-start select-none"
+                        className="text-7xl md:text-8xl text-text font-bold font-italianno text-center md:text-start select-none"
                     >
                         Ryan Chen
                     </motion.h1>
@@ -37,7 +37,7 @@ const Self: React.FC<SelfProps> = ({ isReady, onResumeClick }) => {
                         initial={isSmallScreen? { opacity: 0, x: 40 } : { opacity: 0, y: -20 }}
                         animate={ isReady ? { opacity: 1, x: 0, y: 0 } : {}}
                         transition={{ duration: 1.5, ease: "easeOut" }}
-                        className="text-lg md:text-xl text-center font-quicksand md:text-start mt-2 md:pr-[10vw] select-none"
+                        className="text-lg md:text-xl text-text text-center font-quicksand md:text-start mt-2 md:pr-[10vw] select-none"
                     >
                         I&apos;m a computer science graduate student at USC interested in developing cool software. I enjoy tinkering with new technology to create globally relevant solutions.
                     </motion.p>

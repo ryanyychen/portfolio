@@ -62,9 +62,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     
-    <html lang="en">
+    <html lang="en" data-theme="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -73,7 +74,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased scrollbar-hide`}
       >
-        <div className="h-[100vh] justify-items-center font-[family-name:var(--font-geist-sans)] bg-primary scrollbar-hide">
+        <div className="h-[100vh] justify-items-center font-[family-name:var(--font-geist-sans)] bg-background scrollbar-hide">
           {children}
         </div>
       </body>

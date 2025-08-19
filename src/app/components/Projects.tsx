@@ -32,14 +32,14 @@ const Column: React.FC<ColumnProps> = ({ projects = [], numCols, offset, expande
                         className="h-fit flex flex-col w-full lg:w-[25vw] p-8 rounded-2xl border-2 border-secondary hover:scale-[1.05] transition-all duration-300">
                         <Image src={`${prefix}${project.image}`} alt={project.title} width={400} height={250} className=" max-w-[70vw] md:max-w-[30vw] lg:max-w-[20vw] self-center rounded-2xl" />
                         <div className="flex flex-col h-full w-full self-center mt-2">
-                            <h1 className="text-3xl font-bold font-quicksand">{project.title}</h1>
-                            <p className="text-md font-quicksand">{project.date}</p>
-                            <p className={`mt-2 overflow-y-hidden transition-[max-height] duration-500 ease-in-out ${isExpanded ? 'max-h-[50vh]' : 'max-h-[15vh]'}`}>{project.description}</p>
+                            <h1 className="text-3xl text-text font-bold font-quicksand">{project.title}</h1>
+                            <p className="text-md text-text font-quicksand">{project.date}</p>
+                            <p className={`text-text mt-2 overflow-y-hidden transition-[max-height] duration-500 ease-in-out ${isExpanded ? 'max-h-[50vh]' : 'max-h-[15vh]'}`}>{project.description}</p>
                             <button className="text-accent underline text-sm mt-1 self-start hover:cursor-pointer" onClick={() => toggleExpand(globalIndex)}>{isExpanded ? 'Less' : 'More...'}</button>
                             <button className="homebutton my-4 w-[40vw] md:w-[30vw] lg:w-[20vw] self-center md:self-start"><a href={project.link} target="_">View Repository</a></button>
                             <div className="flex flex-wrap gap-2 mt-2">
                                 {project.tags.map((tag, tagIdx) => (
-                                    <span key={tagIdx} className="text-sm font-quicksand bg-accent/70 text-primary px-2 py-1 rounded-full">{tag}</span>
+                                    <span key={tagIdx} className="text-sm text-text font-quicksand bg-accent/70 text-primary px-2 py-1 rounded-full">{tag}</span>
                                 ))}
                             </div>
                         </div>
