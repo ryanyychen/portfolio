@@ -39,7 +39,7 @@ const Column: React.FC<ColumnProps> = ({ projects = [], numCols, offset, expande
                             <button className="homebutton my-4 w-[40vw] md:w-[30vw] lg:w-[20vw] self-center md:self-start"><a href={project.link} target="_">View Repository</a></button>
                             <div className="flex flex-wrap gap-2 mt-2">
                                 {project.tags.map((tag, tagIdx) => (
-                                    <span key={tagIdx} className="text-sm text-text font-quicksand bg-accent/70 text-primary px-2 py-1 rounded-full">{tag}</span>
+                                    <span key={tagIdx} className="text-sm text-primary font-quicksand bg-accent/70 px-2 py-1 rounded-full">{tag}</span>
                                 ))}
                             </div>
                         </div>
