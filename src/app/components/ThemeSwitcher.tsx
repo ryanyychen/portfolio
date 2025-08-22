@@ -28,27 +28,38 @@ const ThemeSwitcher: React.FC = () => {
       } else {
         element.classList.remove("dark");
       }
+
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+      const listener = (e: MediaQueryListEvent) => {
+        if (selected === "system") {
+          if (e.matches) {
+            element.classList.add("dark");
+          } else {
+            element.classList.remove("dark");
+          }
+        }
+      };
+      mediaQuery.addEventListener("change", listener);
+
+      return () => mediaQuery.removeEventListener("change", listener);
     }
   };
 
   const handleSelect = (key: string) => {
     setSelected(key);
+    localStorage.setItem("theme", key);
     applyTheme(key);
   };
 
   useEffect(() => {
-    if (selected !== "system") return;
-
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-    const handleChange = () => applyTheme("system");
-
-    mediaQuery.addEventListener("change", handleChange);
-    applyTheme("system");
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleChange);
-    };
-  }, [selected]);
+    const stored = localStorage.getItem("theme");
+    if (stored) {
+      applyTheme(stored);
+      setSelected(stored);
+    } else {
+      applyTheme("system");
+    }
+  }, []);
 
   return (
     <div className="relative flex w-fit rounded-2xl bg-muted p-1 shadow-inner">

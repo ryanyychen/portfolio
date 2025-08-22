@@ -163,9 +163,9 @@
 }
 
 .animated-signature.animate {
-  stroke: black;
+  stroke: var(--color-text);
   stroke-width: 2;
-  fill: black;
+  fill: var(--color-text);
   animation:
     drawOutline 2s ease forwards 0.2s,
     fillIn 0.5s ease forwards 2s;
