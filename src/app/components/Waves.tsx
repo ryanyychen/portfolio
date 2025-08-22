@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-const color = "#212121"
+let color = "#212121"
+const theme = localStorage.getItem("theme") || "light";
+if (theme === "light") {
+    color = "#212121"
+} else {
+    color = "#a4a4a4"
+}
 
 const Waves: React.FC = () => {
     const [showFooter, setShowFooter] = useState(false);
