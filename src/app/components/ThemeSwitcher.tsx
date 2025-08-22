@@ -52,7 +52,7 @@ const ThemeSwitcher: React.FC = () => {
 
   return (
     <div className="relative flex w-fit rounded-2xl bg-muted p-1 shadow-inner">
-      {modes.map((mode, idx) => (
+      {modes.map((mode) => (
         <button
           key={mode.key}
           onClick={() => handleSelect(mode.key)}
