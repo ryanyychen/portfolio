@@ -77,6 +77,7 @@
   --color-accent: #63157a;
   --color-highlight: #63157a;
   --color-text: #000000;
+  --color-wave: #212121;
 }
 
 .dark {
@@ -86,6 +87,7 @@
   --color-accent: #63157a;
   --color-highlight: #63157a;
   --color-text: #ffffff;
+  --color-wave: #a4a4a4;
 }
 
 .scrollbar-hide {
