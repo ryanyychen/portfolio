@@ -3,16 +3,16 @@
 import React from 'react';
 import { useEffect } from "react";
 
-import Self from "@/app/components/Self";
-import Waves from "@/app/components/Waves";
-import Navbar from "@/app/components/Navbar";
-import Skills from "@/app/components/Skills";
-import Connect from "@/app/components/Connect";
-import Loading from "@/app/components/Loading";
-import Projects from "@/app/components/Projects";
-import Education from "@/app/components/Education";
-import Experience from "@/app/components/Experience";
-import ResumeOverlay from "@/app/components/ResumeOverlay";
+import Self from "@/components/Self";
+import Waves from "@/components/Waves";
+import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
+import Connect from "@/components/Connect";
+import Loading from "@/components/Loading";
+import Projects from "@/components/Projects";
+import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+import ResumeOverlay from "@/components/ResumeOverlay";
 
 import projectsData from "@/app/projects.json";
 import experienceData from "@/app/experience.json";
