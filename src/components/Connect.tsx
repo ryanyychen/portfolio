@@ -69,7 +69,7 @@ const Connect: React.FC = () => {
                 </div>
                 <div className="flex flex-col items-center w-[10vw] gap-8">
                     <div 
-                        onClick={() => window.open("https://linkedin.com/in/yu-you-ryan-chen/", "_blank")}
+                        onClick={() => window.open("https://linkedin.com/in/yuyouchen/", "_blank")}
                         className="relative w-[30px] h-[30px] p-4 cursor-pointer transition-all duration-300 hover:scale-[1.1]">
                         <Image
                             src={`${prefix}/connect/linkedin.svg`}
