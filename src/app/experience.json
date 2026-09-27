@@ -1,23 +1,37 @@
 [
     {
+        "position": "DevOps Intern",
+        "company": "Dematic",
+        "start": "May 2026",
+        "end": "Aug 2026",
+        "description": "Built an internal developer platform that established a golden path for deploying microservices with optional databases to GKE Autopilot. Automated Kubernetes and ArgoCD configuration generation, reducing environment deployment time from weeks to 30 minutes, and implemented secure GitOps workflows using GitLab CI, Terraform, and Terragrunt."
+    },
+    {
+        "position": "Research Assistant",
+        "company": "FORTIS Lab at USC",
+        "start": "Sep 2025",
+        "end": "Dec 2025",
+        "description": "Conducted literature reviews across 7+ research papers on machine learning for wildfire prediction, detection, and evacuation planning. Evaluated 3+ wildfire datasets for model training and assessment while investigating how TyphoFormer could be adapted for wildfire forecasting."
+    },
+    {
         "position": "Lead Software Engineer",
-        "company": "IEEE HKN Honors Society at UCSD",
+        "company": "IEEE HKN Honors Society at UC San Diego",
         "start": "Jan 2023",
         "end": "Jun 2025",
-        "description": "Led an 8-person development team for the membership portal, managing task delegation, sprint goals, and on-time project delivery. Oversaw the full software lifecycle, facilitating standups, code reviews, and retrospectives to ensure quality and velocity."
+        "description": "Directed an 8-person engineering team through three full-cycle projects, reducing delivery delays by approximately 30%. Increased team productivity by approximately 50% through structured sprint planning, standups, and code reviews while coordinating requirements across 5+ organization branches for products serving 1,000+ users."
     },
     {
         "position": "Software Engineer Intern",
-        "company": "Project Falcon (Startup)",
+        "company": "Project Falcon",
         "start": "Jun 2024",
         "end": "Dec 2024",
-        "description": "Served as the primary software engineer at a seed-stage LegalTech startup, delivering a prototype in just 4 weeks. Built a ChatGPT-3.5-turbo + Langchain chatbot for legal document analysis and developed scalable ingestion and retrieval systems using Pinecone to support heavy workloads."
+        "description": "Built the company's first production-ready legal document pipeline in four weeks, accelerating document intake by approximately 60%. Developed an LLM-powered legal chatbot, fine-tuned Dolly 2.0 on AWS EC2, and engineered a Pinecone retrieval system supporting 10,000+ document embeddings with sub-second retrieval."
     },
     {
         "position": "CS Instructional Assistant",
         "company": "UC San Diego Computer Science Department",
         "start": "Mar 2024",
         "end": "Dec 2024",
-        "description": "Supported 460+ students in Advanced Data Structures, with an emphasis on code optimization and debugging. Worked closely with faculty to enhance course delivery and student engagement."
+        "description": "Supported more than 460 students in Advanced Data Structures through instruction focused on debugging, code optimization, and core data-structure concepts. Collaborated with faculty to improve course delivery and student engagement."
     }
 ]
